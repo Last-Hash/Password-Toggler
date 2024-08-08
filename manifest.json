@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "Password Toggler",
+    "description": "Toggle password visibility with Control key",
+    "version": "1.0",
+    "permissions": [],
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
+  
