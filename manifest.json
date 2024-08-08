@@ -1,21 +1,30 @@
 {
-   "content_scripts": [ {
-      "all_frames": true,
-      "js": [ "showPassword.js" ],
-      "matches": [ "http://*/*", "https://*/*" ],
-      "run_at": "document_end"
-   } ],
-   "default_locale": "en",
-   "description": "__MSG_extension_description__",
-   "icons": {
-      "128": "icon.png",
-      "16": "icon32.png",
-      "32": "icon32.png",
-      "64": "icon.png"
-   },
   "manifest_version": 3,
-   "name": "Password Toggler",
-   "options_page": "options.html",
-   "permissions": [ "storage" ],
-   "version": "1.0.0"
+  "name": "Password Toggler",
+  "version": "1.0.0",
+  "description": "__MSG_extension_description__",
+  "default_locale": "en",
+  "permissions": [
+    "storage"
+  ],
+  "options_page": "options.html",
+  "icons": {
+    "16": "icon32.png",
+    "32": "icon32.png",
+    "64": "icon.png",
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "showPassword.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ]
 }
